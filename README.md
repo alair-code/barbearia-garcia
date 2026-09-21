@@ -38,6 +38,25 @@ Este é o modelo **Básico**:
 
 Não há banco de dados, painel administrativo, autenticação, API, pagamentos ou sistema de disponibilidade de horários.
 
+## Rodar localmente
+
+Com Node.js e Python instalados, execute:
+
+```bash
+npm run dev
+```
+
+Isso sobe o site em **http://localhost:8000** (usa o `python3 -m http.server` internamente, sem instalar dependências).
+
+Para acessar pelo celular na mesma rede Wi-Fi:
+
+```bash
+npm run dev -- --bind 0.0.0.0
+# depois abra http://SEU-IP:8000 (ex.: http://192.168.0.110:8000)
+```
+
+Para parar o servidor, `Ctrl+C` no terminal.
+
 ## Validação
 
 Com Node.js instalado, execute:

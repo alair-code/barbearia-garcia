@@ -4,6 +4,8 @@
   "private": true,
   "description": "Site institucional estático da Barbearia Garcia, desenvolvido a partir do Template Básico.",
   "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000",
     "check": "node --check javascript/configuracao.js && node --check javascript/script.js"
   }
 }
