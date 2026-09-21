@@ -14,17 +14,12 @@
   setText("nome", config.nome);
   setText("descricao", config.descricao);
   setText("heroTitle", config.heroTitle);
-  setText("instagram", config.instagram);
   setText("endereco", config.endereco);
   setText("horario", config.horario);
   setText("whatsappDisplay", config.whatsappDisplay || config.whatsapp);
 
   document.querySelectorAll("[data-whatsapp-link]").forEach((link) => {
     link.href = whatsappUrl;
-  });
-
-  document.querySelectorAll("[data-instagram-link]").forEach((link) => {
-    link.href = config.instagramUrl;
   });
 
   const mapLink = document.querySelector("[data-map-link]");

@@ -1,8 +1,8 @@
 {
-  "name": "barbearia-basico",
+  "name": "barbearia-garcia",
   "version": "1.0.0",
   "private": true,
-  "description": "Template estático, leve e reutilizável para pequenas barbearias.",
+  "description": "Site institucional estático da Barbearia Garcia, desenvolvido a partir do Template Básico.",
   "scripts": {
     "check": "node --check javascript/configuracao.js && node --check javascript/script.js"
   }
