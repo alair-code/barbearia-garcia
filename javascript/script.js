@@ -22,8 +22,9 @@
     link.href = whatsappUrl;
   });
 
-  const mapLink = document.querySelector("[data-map-link]");
-  if (mapLink) mapLink.href = config.mapaUrl;
+  document.querySelectorAll("[data-map-link]").forEach((link) => {
+    link.href = config.mapaUrl;
+  });
 
   const servicesList = document.querySelector("#services-list");
   servicesList.innerHTML = config.servicos.map((service) => `
